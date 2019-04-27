@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MirrorImage.Core;
+using System;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -26,11 +27,21 @@ namespace MirrorImage.App
         {
             var imgInput = new Bitmap(picInput.Image);
 
-            var imgMirror = (Bitmap)imgInput.Clone();
+            var frameMirrorService = new FrameMirrorService();
 
-            imgMirror.RotateFlip(RotateFlipType.RotateNoneFlipX);
+            var response = frameMirrorService.MirrorImage(imgInput);
 
-            picOutput.Image = imgMirror;
+            ShowResults(response);
+        }
+
+        private void ShowResults(MirrorImageResponse response)
+        {
+            picOutput.Image = response.ImageOutput;
+            
+            var strResults = new StringBuilder();
+            strResults.Append("Elapsed Milliseconds: " + response.ElapsedMilliseconds + Environment.NewLine);
+
+            txtResults.Text = strResults.ToString();
         }
 
         private void ShowImageDetails()

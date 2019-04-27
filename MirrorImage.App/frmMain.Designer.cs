@@ -32,7 +32,7 @@
             this.picOutput = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.grbImages = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtResults = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtDetails = new System.Windows.Forms.TextBox();
             this.btnMirror = new System.Windows.Forms.Button();
@@ -71,7 +71,7 @@
             // 
             // grbImages
             // 
-            this.grbImages.Controls.Add(this.textBox1);
+            this.grbImages.Controls.Add(this.txtResults);
             this.grbImages.Controls.Add(this.label3);
             this.grbImages.Controls.Add(this.txtDetails);
             this.grbImages.Controls.Add(this.btnMirror);
@@ -86,13 +86,13 @@
             this.grbImages.TabStop = false;
             this.grbImages.Text = "Images";
             // 
-            // textBox1
+            // txtResults
             // 
-            this.textBox1.Location = new System.Drawing.Point(312, 321);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(316, 163);
-            this.textBox1.TabIndex = 7;
+            this.txtResults.Location = new System.Drawing.Point(312, 321);
+            this.txtResults.Multiline = true;
+            this.txtResults.Name = "txtResults";
+            this.txtResults.Size = new System.Drawing.Size(316, 163);
+            this.txtResults.TabIndex = 7;
             // 
             // label3
             // 
@@ -158,7 +158,7 @@
         private System.Windows.Forms.TextBox txtDetails;
         private System.Windows.Forms.Button btnMirror;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtResults;
     }
 }
 
