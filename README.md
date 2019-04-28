@@ -6,7 +6,7 @@ Provide an interface method that can be consumed by a potential Media Player whi
 
 |   Original Frame| Mirror Frame  |
 | ------------ | ------------ |
-|  <img src="https://github.com/slipmp/mirror-image/blob/master/1-SD-720-480.jpg?raw=true" height="200"> | <img src="https://github.com/slipmp/mirror-image/blob/master/1-SD-720-480.jpg-Mirror.jpg?raw=true" height="200">  |
+|  <img src="https://github.com/slipmp/mirror-image/blob/master/MirrorImage.Core/Frame-Examples/1-SD-720-480.jpg?raw=true" height="200"> | <img src="https://github.com/slipmp/mirror-image/blob/master/MirrorImage.Core/Frame-Examples/1-SD-720-480-Mirror.jpg?raw=true" height="200">  |
 
 Refer to table below regarding current standard movie resolutions:
 
@@ -28,8 +28,8 @@ Algorithm should be able to process frames within all resolutions provided above
 
 
 # References
-https://www.borrowlenses.com/blog/intro-to-video-frame-rates-and-frames-per-second-shooting-speeds/
-https://pocketnow.com/uhd-video-looks-better
-http://aframe.com/blog/2013/07/a-beginners-guide-to-frame-rates/
-https://www.studiobinder.com/blog/video-frame-rate/
-https://gizmodo.com/the-hobbit-an-unexpected-masterclass-in-why-48-fps-fai-5969817
+- https://www.borrowlenses.com/blog/intro-to-video-frame-rates-and-frames-per-second-shooting-speeds/
+- https://pocketnow.com/uhd-video-looks-better
+- http://aframe.com/blog/2013/07/a-beginners-guide-to-frame-rates/
+- https://www.studiobinder.com/blog/video-frame-rate/
+- https://gizmodo.com/the-hobbit-an-unexpected-masterclass-in-why-48-fps-fai-5969817
