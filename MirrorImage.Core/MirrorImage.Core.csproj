@@ -42,19 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrameExamplesService.cs" />
     <Compile Include="FrameMirrorService.cs" />
-    <Compile Include="MirrorImageResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Frame-Examples\1-SD-720-480-Mirror.jpg" />
-    <Content Include="Frame-Examples\1-SD-720-480.jpg" />
-    <Content Include="Frame-Examples\2-HD-1280-720.jpg" />
-    <Content Include="Frame-Examples\3-Full-HD-1920-1080.jpg" />
-    <Content Include="Frame-Examples\4-Ultra-HD-3840-2160.jpg" />
-    <Content Include="Frame-Examples\5-4k-4096-2160.jpg" />
-    <Content Include="Frame-Examples\6-16MiB-14000-6937.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

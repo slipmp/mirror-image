@@ -3,6 +3,7 @@ using System;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace MirrorImage.App
 {
@@ -30,18 +31,25 @@ namespace MirrorImage.App
 
             var frameMirrorService = new FrameMirrorService();
 
+            var stopWatch = new Stopwatch();
+            //Start counting from beginning of the logic
+            stopWatch.Start();
+
             var response = frameMirrorService.MirrorImage(imgInput);
 
-            ShowResults(response);
+            //Stop counting until last millisecond
+            stopWatch.Stop();
+
+            ShowResults(response, stopWatch.ElapsedMilliseconds);
             btnMirror.Enabled = true;
         }
 
-        private void ShowResults(MirrorImageResponse response)
+        private void ShowResults(Bitmap imageResult, long elapsedMilliseconds)
         {
-            picOutput.Image = response.ImageOutput;
+            picOutput.Image = imageResult;
             
             var strResults = new StringBuilder();
-            strResults.Append("Elapsed Milliseconds: " + response.ElapsedMilliseconds + Environment.NewLine);
+            strResults.Append("Elapsed Milliseconds: " + elapsedMilliseconds + Environment.NewLine);
 
             txtResults.Text = strResults.ToString();
         }

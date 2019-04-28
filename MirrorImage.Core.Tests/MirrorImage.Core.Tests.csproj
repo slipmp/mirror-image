@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.props" Condition="Exists('..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6850D2F4-903B-4363-ADD8-377CF923BA67}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MirrorImage.Core.Tests</RootNamespace>
+    <AssemblyName>MirrorImage.Core.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.1.3.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.1.3.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrameMirrorServiceTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MirrorImage.Core\MirrorImage.Core.csproj">
+      <Project>{d118711e-b94e-4596-a2f2-4aa02de7cdea}</Project>
+      <Name>MirrorImage.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %281%29.jpeg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %281%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %281%29.png" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2810%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2811%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2812%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2813%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2814%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2815%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2816%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2817%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2818%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2819%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %282%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %282%29.png" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2820%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2821%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2822%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2823%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2824%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2825%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2826%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2827%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2828%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2829%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %283%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %283%29.png" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2830%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2831%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2832%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2833%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2834%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2835%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2836%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2837%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2838%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2839%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %284%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %284%29.png" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2840%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2841%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2842%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2843%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2844%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2845%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2846%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2847%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2848%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2849%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %285%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2850%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2851%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2852%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2853%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2854%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2855%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %286%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %287%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %288%29.jpg" />
+    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %289%29.jpg" />
+    <Content Include="Frame-Examples\All-Resolutions\1-SD-720-480-Mirror.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Frame-Examples\All-Resolutions\1-SD-720-480.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Frame-Examples\All-Resolutions\2-HD-1280-720.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Frame-Examples\All-Resolutions\3-Full-HD-1920-1080.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Frame-Examples\All-Resolutions\4-Ultra-HD-3840-2160.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Frame-Examples\All-Resolutions\5-4k-4096-2160.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Frame-Examples\All-Resolutions\6-16MiB-14000-6937.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.props'))" />
+    <Error Condition="!Exists('..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets'))" />
+  </Target>
+  <Import Project="..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets" Condition="Exists('..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets')" />
+</Project>
