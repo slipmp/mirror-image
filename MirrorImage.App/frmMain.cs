@@ -8,7 +8,7 @@ namespace MirrorImage.App
 {
     public partial class frmMain : Form
     {
-        private const string FileNameTest= "Test-Image-33MB-12858x6534.jpg";
+        private const string DefaultImage= "3-Full-HD-1920-1080.jpg";
 
         public frmMain()
         {
@@ -17,7 +17,7 @@ namespace MirrorImage.App
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            picInput.ImageLocation = FileNameTest;
+            picInput.ImageLocation = DefaultImage;
             picInput.Load();
 
             ShowImageDetails();
@@ -25,6 +25,7 @@ namespace MirrorImage.App
 
         private void btnMirror_Click(object sender, EventArgs e)
         {
+            btnMirror.Enabled = false;
             var imgInput = new Bitmap(picInput.Image);
 
             var frameMirrorService = new FrameMirrorService();
@@ -32,6 +33,7 @@ namespace MirrorImage.App
             var response = frameMirrorService.MirrorImage(imgInput);
 
             ShowResults(response);
+            btnMirror.Enabled = true;
         }
 
         private void ShowResults(MirrorImageResponse response)
@@ -46,14 +48,13 @@ namespace MirrorImage.App
 
         private void ShowImageDetails()
         {
-            var file = new System.IO.FileInfo(FileNameTest);
+            var file = new System.IO.FileInfo(DefaultImage);
             var mibSize = ConvertBytesToMebibytes(file.Length);
 
             var strDetails = new StringBuilder();
             strDetails.Append("Width: " + picInput.Image.Width + " pixels" + Environment.NewLine);
             strDetails.Append("Height: " + picInput.Image.Height + " pixels" + Environment.NewLine);
             strDetails.Append("Frame Size: " + string.Format("{0:N2} MiBs", mibSize) + Environment.NewLine);
-
 
             txtDetails.Text = strDetails.ToString();
         }

@@ -6,7 +6,7 @@ Provide an interface method that can be consumed by a potential Media Player whi
 
 |   Original Frame| Mirror Frame  |
 | ------------ | ------------ |
-|  <img src="https://github.com/slipmp/mirror-image/blob/master/Example.jpg?raw=true" height="200"> | <img src="https://github.com/slipmp/mirror-image/blob/master/Example-Mirror.jpg?raw=true" height="200">  |
+|  <img src="https://github.com/slipmp/mirror-image/blob/master/1-SD-720-480.jpg?raw=true" height="200"> | <img src="https://github.com/slipmp/mirror-image/blob/master/1-SD-720-480.jpg-Mirror.jpg?raw=true" height="200">  |
 
 Refer to table below regarding current standard movie resolutions:
 

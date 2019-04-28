@@ -80,15 +80,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Test-Image-33MB-12858x6534.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\MirrorImage.Core.csproj">
+    <ProjectReference Include="..\MirrorImage.Core\MirrorImage.Core.csproj">
       <Project>{d118711e-b94e-4596-a2f2-4aa02de7cdea}</Project>
       <Name>MirrorImage.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="3-Full-HD-1920-1080.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
