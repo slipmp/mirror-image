@@ -38,13 +38,16 @@ Algorithm should be able to process frames within all resolutions provided above
 Application is composed by three Projects:
 1. MirrorImage.App => Windows forms app, initially created to provide a visual cue during development
 2. MirrorImage.Core => Major logic implemented
-3. MirrorImage.Core.Tests => Unit tests project
+3. MirrorImage.Core.Tests => Unit tests project. Results:
+<img src="https://github.com/slipmp/mirror-image/blob/master/Mirror-Image-Tests-Passing.png?raw=true">
 
-Main method implemented is located at **MirrorImage.Core.FrameMirrorService.MirrorImage(Bitmap imgInput)** 
+
+Main method implemented is located at **MirrorImage.Core.FrameMirrorService.MirrorImage(Bitmap imgInput)**
+
 .NET Framework provides a rotate flip out of the box:
 ```csharp
 imageOutput.RotateFlip(RotateFlipType.RotateNoneFlipX);
 ```
-It does not have the best performance, for instance such algorithm would not work for 4K Movies using 60 FPS.
-Ideally an algorithm should be implemented for such high performance requirements, obviously computer configuration has impact on its performance.
-Alternatively the "Mirror Movie Player" must have a buffer implementation, hence processing these frames before hand, enhancing user experience.
+It does not have the best performance, for instance such algorithm would not work for 4K Movies using 60 FPS. Ideally an algorithm should be implemented for such high performance requirements. Also computer configuration has impact on its performance. Provided more time I would have implemented several enhancements, including development of a proper algorithm and more tests.
+
+The "Mirror Movie Player" can have a buffer implementation, hence processing these frames before hand and enhancing user experience.
