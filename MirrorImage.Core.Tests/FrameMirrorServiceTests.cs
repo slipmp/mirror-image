@@ -12,14 +12,14 @@ namespace MirrorImage.Core.Tests
     public class FrameMirrorServiceTests
     {
         private const string AllResolutionsPath = "Frame-Examples\\All-Resolutions\\";
-        private const string Sixty4KImagesResolutionPath = "Frame-Examples\\60-4K-Frames\\";
+        private const string TwentyFour4KImagesResolutionPath = "Frame-Examples\\4K-Frames\\";
 
         /// <summary>
-        /// Algorithm should be able to process frames within all resolutions provided 
-        /// on average of 16 milliseconds => 60 frames * 16 milliseconds = 960 milliseconds total, 
-        /// under 1 second (1000 milleseconds).
+        /// Algorithm should be able to process frames within all resolutions 
+        /// provided above on average of **40 milliseconds** => 
+        /// 24 frames* 40 milliseconds = 960 milliseconds total, under 1 second(1000 milleseconds). 
         /// </summary>
-        private const long MaximumMillisecondsPerFrame = 16; 
+        private const long MaximumMillisecondsPerFrame = 40; 
 
         private readonly FrameMirrorService _frameMirrorService = new FrameMirrorService();
         
@@ -28,7 +28,6 @@ namespace MirrorImage.Core.Tests
         [TestCase("3-Full-HD-1920-1080.jpg")]
         [TestCase("4-Ultra-HD-3840-2160.jpg")]
         [TestCase("5-4k-4096-2160.jpg")]
-        [TestCase("6-16MiB-14000-6937.jpg")]
         public void MirrorImage_AllDefinitions_Pass(string imagePath)
         {
             //ARRANGE
@@ -54,10 +53,10 @@ namespace MirrorImage.Core.Tests
         }
 
         [Test]
-        public void MirrorImage_60Images4KResolution_Under1SecondPass()
+        public void MirrorImage_24Images4KResolution_Under1SecondPass()
         {
             //ARRANGE
-            var fullPath = GetFullPath(Sixty4KImagesResolutionPath);
+            var fullPath = GetFullPath(TwentyFour4KImagesResolutionPath);
             var listOfFiles = Directory.GetFiles(fullPath);
             var listOfImages = new List<Bitmap>();
 
@@ -69,7 +68,7 @@ namespace MirrorImage.Core.Tests
 
             var parallel = new ParallelOptions
             {
-                MaxDegreeOfParallelism = 60
+                MaxDegreeOfParallelism = 24
             };
 
             //ACT
@@ -82,10 +81,10 @@ namespace MirrorImage.Core.Tests
             stopWatch.Stop();
 
             //ASSERT
-            Assert.AreEqual(60, listOfImages.Count, "60 frames must " +
+            Assert.AreEqual(24, listOfImages.Count, "24 frames must " +
                 "tested");
             Assert.IsTrue(stopWatch.ElapsedMilliseconds <= 1000,
-                $"All 60 frames must be mirrored under 1 second/1000 milliseconds and it was " +
+                $"All 24 frames must be mirrored under 1 second/1000 milliseconds and it was " +
                 $"{stopWatch.ElapsedMilliseconds}");
         }
 

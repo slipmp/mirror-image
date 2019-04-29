@@ -68,184 +68,76 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %281%29.jpeg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %281%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %281%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %2815%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %281%29.png">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %2818%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2810%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %2822%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2811%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %2826%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2812%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %2828%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2813%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %2829%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2814%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %2830%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2815%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %2831%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2816%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %2832%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2817%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %2835%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2818%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %2836%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2819%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %284%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2820%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %2841%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2821%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %2844%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2822%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %2845%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2823%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %2846%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2824%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %2847%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2825%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %2848%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2826%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %285%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2827%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %2850%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2828%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %2856%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2829%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %287%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %283%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %283%29.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2830%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2831%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2832%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2833%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2834%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2835%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2836%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2837%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2838%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2839%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %284%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %284%29.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2840%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2841%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2842%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2843%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2844%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2845%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2846%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2847%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2848%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2849%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %285%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2850%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2851%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2852%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2853%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2854%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2855%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2856%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %2857%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %286%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %287%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %288%29.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\60-4K-Frames\4k-Frame %289%29.jpg">
+    <Content Include="Frame-Examples\4K-Frames\4k-Frame %288%29.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Frame-Examples\All-Resolutions\1-SD-720-480-Mirror.jpg">
@@ -264,9 +156,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Frame-Examples\All-Resolutions\5-4k-4096-2160.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Frame-Examples\All-Resolutions\6-16MiB-14000-6937.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

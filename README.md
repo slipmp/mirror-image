@@ -23,8 +23,8 @@ The frame rates for TV and films are standardized by The Society of Motion Pictu
 Most of movies are recorded at **24 FPS**, with exception of few such as The Hobbit being shot at **48 FPS**, negligent evidence on cinema movies recorded using **60 FPS**.
 
 ## Acceptance Criteria
-Algorithm should be able to process frames within all resolutions provided above on average of **16 milliseconds** => 
-60 frames * 16 milliseconds = 960 milliseconds total, under 1 second (1000 milleseconds).
+Algorithm should be able to process frames within all resolutions provided above on average of **40 milliseconds** => 
+24 frames * 40 milliseconds = 960 milliseconds total, under 1 second (1000 milleseconds).
 
 
 # References
