@@ -1,12 +1,12 @@
 # Mirror image 
 Algorithm to which accepts an image as input and results its equivalent mirrored image.
 
-## Solution details
+## Description
 Provide an interface method that can be consumed by a potential Media Player which plays videos on "mirrored mode", actual images must be seen like being viewed on mirror. Example: 
 
 |   Original Frame| Mirror Frame  |
 | ------------ | ------------ |
-|  <img src="https://github.com/slipmp/mirror-image/blob/master/MirrorImage.Core/Frame-Examples/1-SD-720-480.jpg?raw=true" height="200"> | <img src="https://github.com/slipmp/mirror-image/blob/master/MirrorImage.Core/Frame-Examples/1-SD-720-480-Mirror.jpg?raw=true" height="200">  |
+|  <img src="https://github.com/slipmp/mirror-image/blob/master/MirrorImage.Core.Tests/Frame-Examples/All-Resolutions/1-SD-720-480.jpg?raw=true" height="200"> | <img src="https://github.com/slipmp/mirror-image/blob/master/MirrorImage.Core.Tests/Frame-Examples/All-Resolutions/1-SD-720-480-Mirror.jpg?raw=true" height="200">  |
 
 Refer to table below regarding current standard movie resolutions:
 
@@ -27,9 +27,24 @@ Algorithm should be able to process frames within all resolutions provided above
 24 frames * 40 milliseconds = 960 milliseconds total, under 1 second (1000 milleseconds).
 
 
-# References
+## References
 - https://www.borrowlenses.com/blog/intro-to-video-frame-rates-and-frames-per-second-shooting-speeds/
 - https://pocketnow.com/uhd-video-looks-better
 - http://aframe.com/blog/2013/07/a-beginners-guide-to-frame-rates/
 - https://www.studiobinder.com/blog/video-frame-rate/
 - https://gizmodo.com/the-hobbit-an-unexpected-masterclass-in-why-48-fps-fai-5969817
+
+## Solution Details
+Application is composed by three Projects:
+1. MirrorImage.App => Windows forms app, initially created to provide a visual cue during development
+2. MirrorImage.Core => Major logic implemented
+3. MirrorImage.Core.Tests => Unit tests project
+
+Main method implemented is located at **MirrorImage.Core.FrameMirrorService.MirrorImage(Bitmap imgInput)** 
+.NET Framework provides a rotate flip out of the box:
+```csharp
+imageOutput.RotateFlip(RotateFlipType.RotateNoneFlipX);
+```
+It does not have the best performance, for instance such algorithm would not work for 4K Movies using 60 FPS.
+Ideally an algorithm should be implemented for such high performance requirements, obviously computer configuration has impact on its performance.
+Alternatively the "Mirror Movie Player" must have a buffer implementation, hence processing these frames before hand, enhancing user experience.
