@@ -15,16 +15,14 @@ namespace MirrorImage.Core
 
     public class FrameMirrorService : IFrameMirrorService
     {
+        /// <summary>
+        /// Stefano, I was able to find another way of performing the job by using pointers in c#
+        /// everything is done on memory and it is faster than original implementation by using 
+        /// imageOutput.RotateFlip(RotateFlipType.RotateNoneFlipX);
+        /// </summary>
+        /// <param name="imgInput"></param>
+        /// <returns></returns>
         public Bitmap MirrorImage(Bitmap imgInput)
-        {
-            //Test if image is null among other things
-
-            var result = MirrorImageFasterUsingUnsafeCode(imgInput);
-            
-            return result;
-        }
-
-        private Bitmap MirrorImageFasterUsingUnsafeCode(Bitmap imgInput)
         {
             int width = imgInput.Width;
             int height = imgInput.Height;
@@ -32,7 +30,7 @@ namespace MirrorImage.Core
             var imgMirrored = new Bitmap(imgInput.Width, imgInput.Height);
 
             int newWidthMinusOne = width - 1;
-            
+
             BitmapData imgInputBitmapData = imgInput.LockBits(
                 new Rectangle(0, 0, width, height),
                 ImageLockMode.ReadOnly,
@@ -53,7 +51,8 @@ namespace MirrorImage.Core
                     for (int x = 0; x < width; ++x)
                     {
                         int sourcePosition = (x + y * width);
-                        int destinationPosition = (y * width + width - x -1);
+                        //This is genius :) 
+                        int destinationPosition = (y * width + newWidthMinusOne - x);
                         mirroredPointer[destinationPosition] = imageOriginalPointer[sourcePosition];
                     }
                 }
@@ -65,6 +64,5 @@ namespace MirrorImage.Core
 
             return imgMirrored;
         }
-
     }
 }
