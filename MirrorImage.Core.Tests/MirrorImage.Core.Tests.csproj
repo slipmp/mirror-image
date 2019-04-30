@@ -152,6 +152,9 @@
     <Content Include="Frame-Examples\All-Resolutions\3-Full-HD-1920-1080.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Frame-Examples\All-Resolutions\3x3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Frame-Examples\All-Resolutions\4-Ultra-HD-3840-2160.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -22,7 +22,8 @@ namespace MirrorImage.Core.Tests
         private const long MaximumMillisecondsPerFrame = 40; 
 
         private readonly FrameMirrorService _frameMirrorService = new FrameMirrorService();
-        
+
+        [TestCase("3x3.jpg")]
         [TestCase("1-SD-720-480.jpg")]
         [TestCase("2-HD-1280-720.jpg")]
         [TestCase("3-Full-HD-1920-1080.jpg")]
