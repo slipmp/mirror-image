@@ -44,6 +44,7 @@ Application is composed by three Projects:
 
 Main method implemented is located at **MirrorImage.Core.FrameMirrorService.MirrorImage(Bitmap imgInput)**
 
+### Version 1 - Removed
 .NET Framework provides a rotate flip out of the box:
 ```csharp
 imageOutput.RotateFlip(RotateFlipType.RotateNoneFlipX);
@@ -51,3 +52,7 @@ imageOutput.RotateFlip(RotateFlipType.RotateNoneFlipX);
 It does not have the best performance, for instance such algorithm would not work for 4K Movies using 60 FPS. Ideally an algorithm should be implemented for such high performance requirements. Also computer configuration has impact on its performance. Provided more time I would have implemented several enhancements, including development of a proper algorithm and more tests.
 
 The "Mirror Movie Player" can have a buffer implementation, hence processing these frames before hand and enhancing user experience.
+
+### Version 2 - Using pointers to enhance performance
+Now application is using pointers and unmanaged code. Quite a complicated logic, but definitely faster than solution provided by the Framework.
+
